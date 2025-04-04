@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+
+{% block body %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center mb-4">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo here" class="img-fluid" style="max-width: 300px;">
+            <p class="lead">A simple task manager built with Flask and MongoDB Atlas.</p>
+        </div>
+        <div class="col-md-4 text-center mb-4 bg-primary text-white p-3 rounded" style="display: flex; justify-content: center; flex-direction: column;">
+            <h4>Features:</h4>
+            <ul class="list-unstyled">
+                <li>Create, update, and delete tasks</li>
+                <li>MongoDB cloud database</li>
+                <li>Bootstrap UI</li>
+                <li>Minimal and lightweight</li>
+            </ul>
+        </div>
+        <div class="col-md-4 text-center mb-4 bg-light p-3 rounded">
+            <h3>Developer Info</h3>
+            <a href="mailto:uttamstudentof.cs@gmail.com" target="_blank">
+                <img src="static/images/gmail.png" alt="Gmail" style="max-width: 35px; margin-right: 10px;">
+            </a>
+            <a href="https://github.com/01uttamsingh" target="_blank" >
+                <img src="static/images/github.png" alt="Github"  style="max-width: 35px; margin-right: 10px;">
+            </a>
+           <a href="https://www.linkedin.com/in/uttam-singh-4139b5327/" target="_blank" >
+                <img src="static/images/linkedin.png" alt="linkdin"  style="max-width: 35px; margin-right: 10px;">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100035254541293&mibextid=ZbWKwL" target="_blank">
+            <img src="static/images/facebook.png" alt="facebook" style="max-width: 35px; margin-right: 10px;">
+         </a>
+         <a href="https://www.instagram.com/01_mr_us/" target="_blank">
+            <img src="static/images/insta.png" alt="insta" style="max-width: 35px; margin-right: 10px;">
+         </a>
+         <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 10px; color: blue; margin-top: 10px;">Click the icons to know me</p>
+
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a href="/" class="btn btn-outline-dark">Go Back to Home</a>
+    </div>
+</div>
+{% endblock %}
